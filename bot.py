@@ -181,7 +181,7 @@ class Bot(Client):
             )
             sys.exit()
 
-        self.self.set_parse_mode(enums.ParseMode.HTML)
+        self.set_parse_mode(enums.ParseMode.HTML)
         self.LOGGER(__name__).info(
             f"[🔥 BERHASIL DIAKTIFKAN! 🔥]\n\nBOT Dibuat oleh @{OWNER}\nJika @{OWNER} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/GeezRam"
         )
