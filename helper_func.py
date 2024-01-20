@@ -148,7 +148,7 @@ async def is_subscribed(filter, client, update):
     except UserNotParticipant:
         return False
 
-    return member.status in ["creator", "administrator", "member"]
+    return member.status in [ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER]
 
 
 async def encode(string):
